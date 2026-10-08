@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Foto - My Vlog</title>
+
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-body-tertiary">
+
+    <div class="container pb-5">
+
+        <!-- Kembali ke halaman utama -->
+        <nav class="py-4" aria-label="Navigasi halaman">
+            <a id="tombol-kembali" class="btn btn-outline-primary" href="index.html">&#9664; Kembali</a>
+        </nav>
+
+        <main>
+
+            <!-- Pesan: sedang memuat / foto tidak ditemukan (diisi JavaScript) -->
+            <p id="detail-pesan" class="alert alert-secondary" role="status">Memuat foto…</p>
+
+            <!-- Mode daftar: tampil jika halaman dibuka tanpa ?id= -->
+            <section id="daftar-foto" aria-labelledby="judul-daftar" hidden>
+                <h1 id="judul-daftar" class="detail-judul h2 fw-bold mb-3">Semua Foto</h1>
+
+                <div id="daftar-foto-grid" class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-3">
+                    <!-- Kartu foto dibuat oleh JavaScript dari json/foto.json -->
+                </div>
+            </section>
+
+            <!-- Mode detail: tampil jika halaman dibuka dengan ?id= -->
+            <section class="detail-media detail-foto-batas" aria-label="Foto" hidden>
+                <div class="ratio ratio-4x3 bg-body-secondary rounded overflow-hidden shadow-sm">
+                    <img id="detail-foto" class="object-fit-contain" alt="">
+                </div>
+            </section>
+
+            <article id="detail-teks" class="detail-foto-batas mt-4" hidden>
+                <h1 id="detail-judul" class="detail-judul h2 fw-bold mb-3"></h1>
+
+                <dl class="d-flex flex-wrap column-gap-4 row-gap-2 mb-3">
+                    <div>
+                        <dt class="small text-uppercase text-body-secondary">Tanggal</dt>
+                        <dd id="detail-tanggal" class="mb-0 fw-semibold"></dd>
+                    </div>
+                    <div>
+                        <dt class="small text-uppercase text-body-secondary">Lokasi</dt>
+                        <dd id="detail-lokasi" class="mb-0 fw-semibold"></dd>
+                    </div>
+                </dl>
+
+                <p id="detail-deskripsi" class="lead mb-0"></p>
+            </article>
+
+        </main>
+
+    </div>
+
+    <script src="css/bootstrap/bootstrap.bundle.min.js"></script>
+
+    <!-- Memakai load-foto.js yang sama dengan halaman utama -->
+    <script src="javascript/load-foto.js"></script>
+    <script src="javascript/detail-foto.js"></script>
+</body>
+</html>

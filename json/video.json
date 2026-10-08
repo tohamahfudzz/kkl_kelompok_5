@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "judul": "judul judul",
+    "deskripsi": "Video perjalanan kami menuju pantai.",
+    "path": "video/video1.mp4",
+    "time": "2026-09-28",
+    "thumbnail": "images/thumb1.png",
+    "lokasi": "Lokasi A"
+  },
+  {
+    "id": 2,
+    "judul": "Makan Siang di Warung Pinggir Jalan",
+    "deskripsi": "Mencoba makanan lokal setelah seharian berjalan.",
+    "path": "video/video1.mp4",
+    "time": "2026-09-28",
+    "thumbnail": "images/thumb1.png",
+    "lokasi": "Lokasi B"
+  },
+  {
+    "id": 3,
+    "judul": "Pagi di Kota Lama",
+    "deskripsi": "Berkeliling kota lama saat suasana masih sepi.",
+    "path": "video/video1.mp4",
+    "time": "2026-09-29",
+    "thumbnail": "images/thumb1.png",
+    "lokasi": "Lokasi A"
+  },
+  {
+    "id": 4,
+    "judul": "Sore di Taman Kota",
+    "deskripsi": "Bersantai sambil melihat orang-orang berolahraga.",
+    "path": "video/video1.mp4",
+    "time": "2026-10-01",
+    "thumbnail": "images/thumb1.png",
+    "lokasi": "Lokasi C"
+  }
+]

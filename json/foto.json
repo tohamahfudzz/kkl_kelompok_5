@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "judul": "Menikmati Senja",
+    "deskripsi": "Momen ketika menikmati matahari terbenam.",
+    "path": "foto/foto1.png",
+    "time": "2026-09-28",
+    "lokasi": "Lokasi A"
+  },
+  {
+    "id": 2,
+    "judul": "Jejak di Pasir",
+    "deskripsi": "Langkah kaki di sepanjang bibir pantai.",
+    "path": "foto/foto1.png",
+    "time": "2026-09-28",
+    "lokasi": "Lokasi B"
+  },
+  {
+    "id": 3,
+    "judul": "Gedung Tua",
+    "deskripsi": "Bangunan lama dengan jendela besar di kota lama.",
+    "path": "foto/foto1.png",
+    "time": "2026-09-29",
+    "lokasi": "Lokasi A"
+  },
+  {
+    "id": 4,
+    "judul": "Kopi Hangat",
+    "deskripsi": "Secangkir kopi di sela-sela perjalanan.",
+    "path": "foto/foto1.png",
+    "time": "2026-09-29",
+    "lokasi": "Lokasi C"
+  },
+  {
+    "id": 5,
+    "judul": "Langit Sore",
+    "deskripsi": "Langit berwarna jingga di atas taman kota.",
+    "path": "foto/foto1.png",
+    "time": "2026-10-01",
+    "lokasi": "Lokasi B"
+  }
+]

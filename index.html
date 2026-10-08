@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Vlog</title>
+
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-body-tertiary">
+
+    <div class="container pb-5">
+
+        <!-- 1. Judul website -->
+        <header id="judul-website" class="py-5">
+            <h1 class="judul-utama display-1 fw-bold mb-2">MY VLOG</h1>
+            <p class="lead text-body-secondary mb-0">Stories • Videos • Moments</p>
+        </header>
+
+        <main>
+
+            <!-- 2. Carousel utama: 3 foto terbaru, berjalan otomatis -->
+            <section id="bagian-carousel" aria-label="Sorotan foto">
+                <div id="carousel-utama" class="carousel slide carousel-hero shadow-sm">
+                    <div id="hero-track" class="carousel-inner">
+                        <!-- 3 slide dibuat oleh JavaScript dari json/foto.json.
+                             Teks di bawah hilang otomatis setelah slide termuat;
+                             jika tetap tampil, cek javascript/carousel-utama.js dan json/foto.json -->
+                        <div class="carousel-item active">
+                            <p class="text-center text-body-secondary py-5 mb-0">Memuat foto…</p>
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel-utama" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Slide sebelumnya</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel-utama" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Slide berikutnya</span>
+                    </button>
+
+                    <div id="hero-indikator" class="carousel-indicators">
+                        <!-- Titik indikator dibuat oleh JavaScript -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- 3. Video (3 saja) -->
+            <section id="bagian-video" class="py-4 mt-3" aria-labelledby="judul-video">
+                <h2 id="judul-video" class="h3 fw-bold mb-3">Video</h2>
+
+                <div id="video-grid" class="row row-cols-1 row-cols-md-3 g-3">
+                    <!-- Kartu video dibuat oleh JavaScript dari json/video.json -->
+                </div>
+            </section>
+
+            <!-- 4. Foto (3 saja) -->
+            <section id="bagian-foto" class="py-4" aria-labelledby="judul-foto">
+                <h2 id="judul-foto" class="h3 fw-bold mb-3">Foto</h2>
+
+                <div id="foto-grid" class="row row-cols-1 row-cols-md-3 g-3">
+                    <!-- Kartu foto dibuat oleh JavaScript dari json/foto.json -->
+                </div>
+            </section>
+
+        </main>
+
+        <!-- 5. Tombol menuju halaman foto dan video -->
+        <nav id="bagian-tombol" class="d-flex flex-wrap justify-content-center gap-3 py-4" aria-label="Lihat semua konten">
+            <a class="btn btn-primary btn-lg px-5" href="foto.html">Foto</a>
+            <a class="btn btn-primary btn-lg px-5" href="video.html">Video</a>
+        </nav>
+
+        <!-- 6. Timeline -->
+        <section id="bagian-timeline" class="py-4" aria-labelledby="judul-timeline">
+            <h2 id="judul-timeline" class="h3 fw-bold mb-3">Timeline</h2>
+
+            <nav id="timeline" class="timeline d-flex overflow-x-auto pt-3 pb-2" aria-labelledby="judul-timeline">
+                <!-- Titik timeline dibuat oleh JavaScript dari nilai "time" pada video.json dan foto.json -->
+            </nav>
+        </section>
+
+        <!-- 7. Filter lokasi (pilihan ditulis langsung di HTML) -->
+        <section id="bagian-lokasi" class="py-4" aria-labelledby="judul-lokasi">
+            <h2 id="judul-lokasi" class="h3 fw-bold mb-3">Lokasi</h2>
+
+            <div id="filter-lokasi" class="d-flex flex-wrap gap-2" role="group" aria-labelledby="judul-lokasi">
+                <button type="button" class="btn btn-outline-primary active" data-location="all" aria-pressed="true">Semua</button>
+                <button type="button" class="btn btn-outline-primary" data-location="Lokasi A" aria-pressed="false">Lokasi A</button>
+                <button type="button" class="btn btn-outline-primary" data-location="Lokasi B" aria-pressed="false">Lokasi B</button>
+                <button type="button" class="btn btn-outline-primary" data-location="Lokasi C" aria-pressed="false">Lokasi C</button>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="css/bootstrap/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript dipisah per fitur -->
+    <script src="javascript/load-video.js"></script>
+    <script src="javascript/load-foto.js"></script>
+    <script src="javascript/carousel-utama.js"></script>
+    <script src="javascript/video-grid.js"></script>
+    <script src="javascript/foto-grid.js"></script>
+    <script src="javascript/filter.js"></script>
+    <script src="javascript/timeline.js"></script>
+    <script src="javascript/filter-lokasi.js"></script>
+</body>
+</html>
